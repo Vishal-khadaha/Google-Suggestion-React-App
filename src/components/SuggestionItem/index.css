@@ -1,0 +1,17 @@
+/* Write your CSS here */
+.list-item {
+  font-size: 20px;
+  list-style-type: none;
+  font-family: roboto;
+  margin-bottom: 6px;
+  color: #64748b;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+.suggestion-text {
+  margin-top: 0px;
+}
+.arrow-logo {
+  height: 22px;
+}
