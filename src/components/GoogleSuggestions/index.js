@@ -4,7 +4,7 @@ import './index.css'
 import SuggestionItem from '../SuggestionItem'
 
 class GoogleSuggestions extends Component {
-  state = {searchInput: ''}
+  state = {searchInputVal: ''}
   searchInput = event => {
     const {searchFun} = this.props
     searchFun(event.target.value)
@@ -15,7 +15,7 @@ class GoogleSuggestions extends Component {
       eachObj => eachObj.id === list_item_Id,
     )
     console.log(clickedItem[0].suggestion)
-    this.setState({searchInput: clickedItem[0].suggestion})
+    this.setState({searchInputVal: clickedItem[0].suggestion})
   }
   render() {
     const {suggestionsList} = this.props
